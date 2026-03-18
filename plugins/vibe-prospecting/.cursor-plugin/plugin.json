@@ -1,0 +1,11 @@
+{
+  "name": "vibe-prospecting",
+  "displayName": "Vibe Prospecting",
+  "version": "1.0.0",
+  "description": "Find company & contact data. Turn your Cursor agent into a prospecting platform. Find any company or professional right in your Cursor. Get contact information, roles, tech stack, business events, website changes, intent data, and much more. Build lead lists, research prospects, identify talent, and craft personalized outreach, all without leaving your chat. Vibe Prospecting delivers fresh B2B data backed by 50+ data sources. Vibe Prospecting has 150M+ companies and 800M+ professionals, with verified contact information, firmographics, technographics, hiring trends, intent signals, funding events, and more.",
+  "author": {
+    "name": "Vibeprospecting.ai"
+  },
+  "keywords": ["prospecting", "b2b", "contacts", "companies", "enrichment", "intent", "mcp"],
+  "logo": "assets/logo.svg"
+}
