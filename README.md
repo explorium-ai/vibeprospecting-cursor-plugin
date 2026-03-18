@@ -1,6 +1,6 @@
 # Vibe Prospecting Cursor Plugin
 
-![Vibe Prospecting](plugins/vibe-prospecting/assets/logo.png)
+<img src="plugins/vibe-prospecting/assets/logo.png" width="48" height="48" alt="Vibe Prospecting" />
 
 **Find company & contact data.**
 
