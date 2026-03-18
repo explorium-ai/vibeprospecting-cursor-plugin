@@ -1,5 +1,7 @@
 # Vibe Prospecting Cursor Plugin
 
+![Vibe Prospecting](plugins/vibe-prospecting/assets/logo.png)
+
 **Find company & contact data.**
 
 Turn your Cursor agent into a prospecting platform. Find any company or professional right in your Cursor. Get contact information, roles, tech stack, business events, website changes, intent data, and much more. Build lead lists, research prospects, identify talent, and craft personalized outreach, all without leaving your chat.
