@@ -1,24 +1,22 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "vibe-prospecting",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Vibeprospecting.ai"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
-    "version": "0.1.0",
+    "description": "Find company & contact data. Turn your Cursor agent into a prospecting platform. 150M+ companies and 800M+ professionals backed by 50+ data sources.",
+    "version": "1.0.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "vibe-prospecting",
+      "source": "plugins/vibe-prospecting",
+      "description": "Find company & contact data. Build lead lists, research prospects, identify talent. 150M+ companies, 800M+ professionals, 50+ data sources.",
+      "version": "1.0.0",
+      "author": { "name": "Vibeprospecting.ai" },
+      "homepage": "https://vibeprospecting.ai",
+      "keywords": ["prospecting", "b2b", "leads", "business intelligence", "contact data"]
     }
   ]
 }

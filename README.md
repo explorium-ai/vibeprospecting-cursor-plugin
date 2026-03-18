@@ -1,34 +1,42 @@
-# Cursor plugin template
+# Vibe Prospecting Cursor Plugin
 
-Build and publish Cursor Marketplace plugins from a single repo.
+![Vibe Prospecting](plugins/vibe-prospecting/assets/logo.png)
 
-Two starter plugins are included:
+**Find company & contact data.**
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+Turn your Cursor agent into a prospecting platform. Find any company or professional right in your Cursor. Get contact information, roles, tech stack, business events, website changes, intent data, and much more. Build lead lists, research prospects, identify talent, and craft personalized outreach, all without leaving your chat.
 
-## Getting started
+Vibe Prospecting delivers fresh B2B data backed by 50+ data sources. Vibe Prospecting has 150M+ companies and 800M+ professionals, with verified contact information, firmographics, technographics, hiring trends, intent signals, funding events, and more.
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+**Developed by:** [Vibeprospecting.ai](https://vibeprospecting.ai)
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+## Features
 
-To add more plugins, see `docs/add-a-plugin.md`.
+- Build lead lists and research prospects without leaving chat
+- Find companies by industry, size, tech stack, location, or buying intent
+- Find prospects by job title, department, company, or location
+- Enrich with firmographics, technographics, contacts, and events
+- Export results to CSV
 
-## Single plugin vs multi-plugin
+## Prerequisites
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+- Cursor IDE v1.0 or later (for OAuth support with the remote MCP server)
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+## Installation
 
-## Submission checklist
+1. Clone or add this repository to your Cursor workspace.
+2. The plugin registers itself via `.cursor-plugin/marketplace.json`.
+3. Connect to the Vibe Prospecting MCP server when prompted (OAuth flow).
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+## MCP Server
+
+- **Connector URL:** `https://mcp-cursor.vibeprospecting.ai/mcp`
+- OAuth authentication. Cursor handles the flow automatically when you first use the plugin.
+
+## Validation
+
+Run validation before committing:
+
+```bash
+node scripts/validate-template.mjs
+```
