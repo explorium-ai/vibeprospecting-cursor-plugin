@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "vibe-prospecting": {
-      "url": "https://mcp-gpt.vibeprospecting.ai/mcp"
+      "url": "https://mcp-cursor.vibeprospecting.ai/mcp"
     }
   }
 }
