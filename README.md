@@ -28,7 +28,7 @@ Vibe Prospecting delivers fresh B2B data backed by 50+ data sources. Vibe Prospe
 
 ## MCP Server
 
-- **Connector URL:** `https://vibeprospecting.explorium.ai/mcp`
+- **Connector URL:** `https://mcp-cursor.vibeprospecting.ai/mcp`
 - OAuth authentication. Cursor handles the flow automatically when you first use the plugin.
 
 ## Validation
