@@ -1,6 +1,6 @@
 # Vibe Prospecting Cursor Plugin
 
-![Vibe Prospecting](plugins/vibe-prospecting/assets/logo.png)
+<img src="plugins/vibe-prospecting/assets/logo.png" width="48" height="48" alt="Vibe Prospecting" />
 
 **Find company & contact data.**
 
@@ -27,6 +27,20 @@ Vibe Prospecting delivers fresh B2B data backed by 50+ data sources. Vibe Prospe
 1. Clone or add this repository to your Cursor workspace.
 2. The plugin registers itself via `.cursor-plugin/marketplace.json`.
 3. Connect to the Vibe Prospecting MCP server when prompted (OAuth flow).
+
+## Connecting locally
+
+Cursor does not auto-discover plugins from a workspace's `marketplace.json`. To see Vibe Prospecting in Settings > Plugins, run the install script:
+
+```bash
+./scripts/install-plugin.sh
+```
+
+Then **restart Cursor** (Cmd+Q, then reopen). The plugin will appear in Settings > Plugins under "Installed".
+
+If the plugin still doesn't load, enable **"Include third-party Plugins, Skills, and other configs"** in Settings > Features.
+
+**MCP connection**: When you use the agent with a prospecting request, Cursor connects to `https://mcp-cursor.vibeprospecting.ai/mcp`. On first use, you'll be prompted to authenticate via OAuth in your browser.
 
 ## MCP Server
 

@@ -11,6 +11,7 @@
   "plugins": [
     {
       "name": "vibe-prospecting",
+      "displayName": "Vibe Prospecting",
       "source": "plugins/vibe-prospecting",
       "description": "Find company & contact data. Build lead lists, research prospects, identify talent. 150M+ companies, 800M+ professionals, 50+ data sources.",
       "version": "1.0.0",
