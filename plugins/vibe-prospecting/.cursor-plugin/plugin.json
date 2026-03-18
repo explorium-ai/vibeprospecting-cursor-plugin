@@ -6,6 +6,7 @@
   "author": {
     "name": "Vibeprospecting.ai"
   },
-  "keywords": ["prospecting", "b2b", "contacts", "companies", "enrichment", "intent", "mcp"],
+  "homepage": "https://vibeprospecting.ai",
+  "keywords": ["prospecting", "b2b", "contacts", "companies", "enrichment", "intent", "mcp", "leads", "business intelligence"],
   "logo": "assets/logo.png"
 }

@@ -12,7 +12,11 @@
     {
       "name": "vibe-prospecting",
       "source": "plugins/vibe-prospecting",
-      "description": "Find company & contact data. Build lead lists, research prospects, identify talent. 150M+ companies, 800M+ professionals, 50+ data sources."
+      "description": "Find company & contact data. Build lead lists, research prospects, identify talent. 150M+ companies, 800M+ professionals, 50+ data sources.",
+      "version": "1.0.0",
+      "author": { "name": "Vibeprospecting.ai" },
+      "homepage": "https://vibeprospecting.ai",
+      "keywords": ["prospecting", "b2b", "leads", "business intelligence", "contact data"]
     }
   ]
 }
