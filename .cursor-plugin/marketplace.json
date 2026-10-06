@@ -5,8 +5,7 @@
   },
   "metadata": {
     "description": "Find company & contact data. Turn your Cursor agent into a prospecting platform. 150M+ companies and 800M+ professionals backed by 50+ data sources.",
-    "version": "1.0.0",
-    "pluginRoot": "plugins"
+    "version": "1.0.0"
   },
   "plugins": [
     {
