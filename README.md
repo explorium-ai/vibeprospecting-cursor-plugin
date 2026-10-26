@@ -1,56 +1,49 @@
-# Vibe Prospecting Cursor Plugin
+# Vibe Prospecting
 
 <img src="plugins/vibe-prospecting/assets/logo.png" width="48" height="48" alt="Vibe Prospecting" />
 
-**Find company & contact data.**
+Find leads & B2B contact data inside Cursor.
 
-Turn your Cursor agent into a prospecting platform. Find any company or professional right in your Cursor. Get contact information, roles, tech stack, business events, website changes, intent data, and much more. Build lead lists, research prospects, identify talent, and craft personalized outreach, all without leaving your chat.
+Vibe Prospecting brings live B2B data into Cursor for prospecting, lead research, and data enrichment. It draws on a database of 150M+ companies and 800M+ professional contacts aggregated from 50+ sources, so you can build lead lists, research accounts, and fill in missing contact data without leaving the chat.
 
-Vibe Prospecting delivers fresh B2B data backed by 50+ data sources. Vibe Prospecting has 150M+ companies and 800M+ professionals, with verified contact information, firmographics, technographics, hiring trends, intent signals, funding events, and more.
+**Developed by:** [Explorium.ai](https://vibeprospecting.ai)
 
-**Developed by:** [Vibeprospecting.ai](https://vibeprospecting.ai)
+## Capabilities
 
-## Features
+- Turn an ideal customer profile into a targeted list of companies and decision-makers
+- Find business emails and phone numbers for named contacts or prospects matching your criteria
+- Enrich company and contact records with firmographics, technology data and professional profiles
+- Research target accounts and compare competitors using funding, hiring, technology and business signals
+- Prioritize accounts and leads against your ICP using available buying intent and recent business events
+- Map potential buying-committee roles and prepare meeting briefs from company and attendee research
+- Find lookalike companies using a seed account's industry, size, geography and technology profile
+- Count companies matching your ICP to estimate market size and refine territory filters
+- Source candidates from a role brief and map talent pools across target companies
+- Normalize pasted company and contact lists, flag formatting issues and identify matched duplicates
 
-- Build lead lists and research prospects without leaving chat
-- Find companies by industry, size, tech stack, location, or buying intent
-- Find prospects by job title, department, company, or location
-- Enrich with firmographics, technographics, contacts, and events
-- Export results to CSV
+## Files
 
-## Prerequisites
-
-- Cursor IDE v1.0 or later (for OAuth support with the remote MCP server)
+- `.cursor-plugin/marketplace.json`: marketplace manifest. `pluginRoot` is `plugins` and the plugin `source` is `vibe-prospecting`.
+- `plugins/vibe-prospecting/.cursor-plugin/plugin.json`: plugin manifest, version 1.0.1.
+- `plugins/vibe-prospecting/mcp.json`: the remote MCP server `vibe-prospecting` at `https://mcp-cursor.vibeprospecting.ai/mcp`.
+- `plugins/vibe-prospecting/skills/`: twelve workflow skills, each carrying the same connector rules: `list-builder`, `account-contacts`, `enrich-company`, `enrich-contact`, `account-research`, `competitor-research`, `meeting-prep`, `lookalike-accounts`, `market-sizing`, `score-leads`, `talent-sourcing`, `clean-data`. They mirror the skills in [vibeprospecting-openai-plugin](https://github.com/explorium-ai/vibeprospecting-openai-plugin).
+- `plugins/vibe-prospecting/assets/logo.png`: 256x256 plugin icon.
 
 ## Installation
 
-1. Clone or add this repository to your Cursor workspace.
-2. The plugin registers itself via `.cursor-plugin/marketplace.json`.
-3. Connect to the Vibe Prospecting MCP server when prompted (OAuth flow).
+Copy `plugins/vibe-prospecting` to `~/.cursor/plugins/local/vibe-prospecting/`, then restart Cursor. The plugin appears in Settings > Plugins.
 
-## Connecting locally
+On first use, Cursor connects to the MCP server and starts the OAuth flow in your browser.
 
-Cursor does not auto-discover plugins from a workspace's `marketplace.json`. To see Vibe Prospecting in Settings > Plugins, run the install script:
+## Try prompts like
 
-```bash
-./scripts/install-plugin.sh
-```
+- "Find 30 VPs of Engineering based in Texas at SaaS companies."
+- "Enrich stripe.com with company size, funding, and technology data."
+- "Find 30 senior backend engineers in Berlin with Go experience."
 
-Then **restart Cursor** (Cmd+Q, then reopen). The plugin will appear in Settings > Plugins under "Installed".
+## Links
 
-If the plugin still doesn't load, enable **"Include third-party Plugins, Skills, and other configs"** in Settings > Features.
-
-**MCP connection**: When you use the agent with a prospecting request, Cursor connects to `https://mcp-cursor.vibeprospecting.ai/mcp`. On first use, you'll be prompted to authenticate via OAuth in your browser.
-
-## MCP Server
-
-- **Connector URL:** `https://mcp-cursor.vibeprospecting.ai/mcp`
-- OAuth authentication. Cursor handles the flow automatically when you first use the plugin.
-
-## Validation
-
-Run validation before committing:
-
-```bash
-node scripts/validate-template.mjs
-```
+- [Website](https://www.vibeprospecting.ai)
+- [Support](https://www.vibeprospecting.ai/contact-us)
+- [Privacy policy](https://www.vibeprospecting.ai/privacy-policy)
+- [Terms of service](https://www.vibeprospecting.ai/terms-of-service)

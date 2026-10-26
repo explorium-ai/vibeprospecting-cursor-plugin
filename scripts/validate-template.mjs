@@ -240,10 +240,9 @@ function resolveMarketplaceSource(source, pluginRoot) {
     return source;
   }
   const normalizedRoot = pluginRoot.replace(/\\/g, "/").replace(/\/+$/, "");
-  const normalizedSource = source.replace(/\\/g, "/");
-  if (normalizedSource === normalizedRoot || normalizedSource.startsWith(`${normalizedRoot}/`)) {
-    return normalizedSource;
-  }
+  const normalizedSource = source.replace(/\\/g, "/").replace(/^\.\/+/, "");
+  // The store always prefixes pluginRoot. Do not skip that when source already
+  // starts with it; that hides a plugins/plugins/<name> path that does not exist.
   return `${normalizedRoot}/${normalizedSource}`;
 }
 
