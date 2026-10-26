@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Find company & contact data. Turn your Cursor agent into a prospecting platform. 150M+ companies and 800M+ professionals backed by 50+ data sources.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "pluginRoot": "plugins"
   },
   "plugins": [
@@ -14,12 +14,18 @@
       "displayName": "Vibe Prospecting",
       "source": "vibe-prospecting",
       "description": "Find company & contact data. Build lead lists, research prospects, identify talent. 150M+ companies, 800M+ professionals, 50+ data sources.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": { "name": "Vibeprospecting.ai" },
       "homepage": "https://vibeprospecting.ai",
       "keywords": ["prospecting", "b2b", "leads", "business intelligence", "contact data"],
-      "category": "Business & Operations",
-      "tags": ["prospecting", "b2b", "contacts", "enrichment", "mcp"],
+      "tags": [
+        "prospecting",
+        "b2b data",
+        "lead generation",
+        "data enrichment",
+        "sales intelligence",
+        "recruiting"
+      ],
       "capabilities": [
         "Turn an ideal customer profile into a targeted list of companies and decision-makers",
         "Find business emails and phone numbers for named contacts or prospects matching your criteria",
