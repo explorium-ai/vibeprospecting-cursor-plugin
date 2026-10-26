@@ -7,6 +7,22 @@
     "name": "Vibeprospecting.ai"
   },
   "homepage": "https://vibeprospecting.ai",
+  "repository": "https://github.com/explorium-ai/vibeprospecting-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.png",
   "keywords": ["prospecting", "b2b", "contacts", "companies", "enrichment", "intent", "mcp", "leads", "business intelligence"],
-  "logo": "assets/logo.png"
+  "category": "Business & Operations",
+  "tags": ["prospecting", "b2b", "contacts", "enrichment", "mcp"],
+  "capabilities": [
+    "Turn an ideal customer profile into a targeted list of companies and decision-makers",
+    "Find business emails and phone numbers for named contacts or prospects matching your criteria",
+    "Enrich company and contact records with firmographics, technology data and professional profiles",
+    "Research target accounts and compare competitors using funding, hiring, technology and business signals",
+    "Prioritize accounts and leads against your ICP using available buying intent and recent business events",
+    "Map potential buying-committee roles and prepare meeting briefs from company and attendee research",
+    "Find lookalike companies using a seed account's industry, size, geography and technology profile",
+    "Count companies matching your ICP to estimate market size and refine territory filters",
+    "Source candidates from a role brief and map talent pools across target companies",
+    "Normalize pasted company and contact lists, flag formatting issues and identify matched duplicates"
+  ]
 }
